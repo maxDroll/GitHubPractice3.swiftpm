@@ -9,5 +9,6 @@ import SwiftUI
 
 struct Task: Hashable {
     var nameOfTask: String
+    var timeEstimate: String
 }
 
