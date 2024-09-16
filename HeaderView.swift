@@ -22,7 +22,7 @@ struct HeaderView: View{
             Button("Add Task") {
                 tasks.append(Task(nameOfTask: storedString , timeEstimate: storedTime))
             }
-            .frame(width: 200, height: 100)
+            .frame(width: 100, height: 80)
             .background(.blue)
             .clipShape(RoundedRectangle(cornerRadius: 25.0))
             .foregroundStyle(.white)
