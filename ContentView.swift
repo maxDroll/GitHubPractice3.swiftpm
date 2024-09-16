@@ -5,7 +5,10 @@ struct ContentView: View {
     var body: some View {
         HeaderView(tasks: $tasks)
         List(tasks, id: \.self){task in
-            Text(task.nameOfTask)
+            HStack(spacing: 100){
+                Text(task.nameOfTask)
+                Text(task.timeEstimate)
+            }
         }
     }
 }
