@@ -12,8 +12,8 @@ struct HeaderView: View{
     @State var storedString = ""
     @State var storedTime = ""
     var body: some View{
-        HStack{
-            VStack{
+        HStack {
+            VStack {
                 TextField("Enter a Task", text: $storedString)
                     .textFieldStyle(.roundedBorder)
                 TextField("Enter a Time", text: $storedTime)
